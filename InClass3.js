@@ -1,6 +1,7 @@
 function isEven(n) {
     if(n < 0) {
         n = n * -1;
+        isEven(n);
     }
 
     if(n % 2 == 0) {
